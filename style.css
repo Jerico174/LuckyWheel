@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  font-family: monospace;
+}
+
+label, input, button, textarea {
+  font-family: monospace;
+}
+
+.canvas-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ui {
+  position: absolute;
+  left: calc(50% - 150px);
+  bottom: 0;
+  width: 300px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  overflow: hidden;
+}
+
+.ui-block {
+  padding: 12px 20px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #555;
+}
+
+.ui-block:nth-child(2n) {
+  background: #888;
+}
+
+.ui-block-button {
+  background: #ebac0c;
+  border-radius: 3px;
+  padding: 6px 10px;
+  border: none;
+  color: #000;
+  outline: none;
+  cursor: pointer;
+  letter-spacing: -0.2px;
+  align-self: center;
+}
+
+.ui-block-button:hover {
+  background: #eb9f56;
+}
+.ui-block-button:active {
+  background: #eb8b67;
+}
+
+.canvas {
+  border-radius: 200px;
+  cursor: grab;
+}
+
+.canvas.m--grabbing {
+  cursor: grabbing;
+}

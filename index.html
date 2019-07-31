@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="canvas-wrapper">
+    <canvas id="canvas" class="canvas"></canvas>
+  </div>
+  <div class="ui">
+    <div class="ui-block">
+      <label for="spin" class="ui-block-label">spin</label>
+      <input id="spin" min="0" max="100" value="0" type="range" class="ui-block-input">
+    </div>
+    <div class="ui-block">
+      <button class="ui-block-button" id="spinButton">spin it!</button>
+    </div>
+    <div class="ui-block">
+      <label class="ui-block-button">Line distance: <span id="lineDistance"></span></label>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
